@@ -5,7 +5,6 @@ A customizable keypad component made with Angular.js. Feel free to download and 
 ## Demo
 You can check it out [here](http://alvarowolfx.github.io/ng-keypad/).
 
-<!-- NOT AVAILABLE YET
 ## Installation
 
 Install manually, or from bower:
@@ -13,7 +12,6 @@ Install manually, or from bower:
 ```bash
 $ bower install ngKeypad
 ```
--->
 
 ## Contributing
 Check [CONTRIBUTING.md](https://github.com/alvarowolfx/ng-keypad/blob/master/CONTRIBUTING.md).
