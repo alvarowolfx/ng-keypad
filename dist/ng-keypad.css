@@ -11,7 +11,7 @@
     background: #f3f3f3; }
   .ios ng-key a {
     color: #4d4d4d;
-    height: 60px; }
+    height: 75px; }
     .ios ng-key a:hover {
       background: #f3f3f3; }
   .ios ng-key.empty {
@@ -77,7 +77,11 @@ ng-keypad {
     height: 63px;
     padding-top: 15px;
     width: 33.33333%;
-    background: white; }
+    background: white;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
     ng-keypad ng-key a {
       cursor: pointer;
       display: block;
@@ -88,7 +92,11 @@ ng-keypad {
       color: blue;
       font-size: 1em;
       -webkit-font-smoothing: antialiased;
-      -webkit-touch-callout: none; }
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none; }
       ng-keypad ng-key a:hover {
         opacity: .8;
         background: #ccccff; }

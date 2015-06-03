@@ -4,10 +4,13 @@ $ios-default-empty-key-color: lighten(gray,30%) !default;
 $ios-default-border-color: lighten(gray,40%) !default;
 $ios-default-key-text-color: darken(gray,20%) !default;
 
+
+$key-padding-bottom: 15px;
+
 .ios {
     ng-key {
         padding-top: 0px;
-        padding-bottom: 15px;
+        padding-bottom: $key-padding-bottom;
         background: $ios-default-key-color;
         width: 100%/$column-number - 1%;
         height: $key-size;
@@ -19,7 +22,7 @@ $ios-default-key-text-color: darken(gray,20%) !default;
 
         a {
             color: $ios-default-key-text-color;
-            height: $key-size;
+            height: $key-size + $key-padding-bottom;
 
             &:hover {
                 background: lighten($ios-default-key-text-color,65%);
