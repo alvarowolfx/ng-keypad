@@ -16,15 +16,11 @@ $key-padding-bottom: 15px;
         height: $key-size;
         border: 1px solid $ios-default-border-color;
 
-        &:hover {
-            background: lighten($ios-default-key-text-color,65%);
-        }
-
         a {
             color: $ios-default-key-text-color;
             height: $key-size + $key-padding-bottom;
 
-            &:hover {
+            &:hover{
                 background: lighten($ios-default-key-text-color,65%);
             }
         }
@@ -32,7 +28,7 @@ $key-padding-bottom: 15px;
         &.empty {
             background: lighten($ios-default-key-text-color, 50%);
 
-            &:hover {
+            a:hover:not(.ng-hide) {
                 background: lighten($ios-default-key-text-color,65%);
             }
         }

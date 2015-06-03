@@ -7,8 +7,6 @@
   width: 32.33333%;
   height: 60px;
   border: 1px solid #e6e6e6; }
-  .ios ng-key:hover {
-    background: #f3f3f3; }
   .ios ng-key a {
     color: #4d4d4d;
     height: 75px; }
@@ -16,7 +14,7 @@
       background: #f3f3f3; }
   .ios ng-key.empty {
     background: #cccccc; }
-    .ios ng-key.empty:hover {
+    .ios ng-key.empty a:hover:not(.ng-hide) {
       background: #f3f3f3; }
 
 @-webkit-keyframes pulse {
