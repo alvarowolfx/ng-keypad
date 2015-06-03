@@ -1,0 +1,10 @@
+/* LAYOUT */
+$key-size: 60px !default;
+$column-number: 3 !default;
+
+/* COLORS */
+$default-color: blue !default;
+$key-color: white !default;
+$key-button-color: white !default;
+$key-button-active-color: lighten($default-color,40%) !default;
+$keypad-main-color: $default-color !default;

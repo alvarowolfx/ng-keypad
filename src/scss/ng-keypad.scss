@@ -1,0 +1,42 @@
+
+@import "variables.scss";
+@import "./themes/ios.scss";
+@import "./themes/android.scss";
+
+ng-keypad {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family:'Open Sans', sans-serif;
+    color: $keypad-main-color;
+    margin: auto;
+
+    & ng-key {
+        font-size: 2em;
+        float: left;
+        text-align: center;
+        height: $key-size * 1.05;
+        padding-top: 15px;
+        width: 100%/$column-number;
+        background: $key-color;
+
+        & a{
+            cursor: pointer;
+            display: block;
+            line-height: $key-size;
+            margin: 0 auto;
+            border: none;
+            font-family:'Open Sans', sans-serif;
+            color: $keypad-main-color;
+            font-size: 1em;
+            -webkit-font-smoothing: antialiased;
+            -webkit-touch-callout: none;
+
+            &:hover {
+                opacity: .8;
+                background: $key-button-active-color;
+            }
+        }
+    }
+}
+

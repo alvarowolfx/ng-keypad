@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ngKeypad - A customizable keypad made with Angular.js</title>
+    <link rel="stylesheet" type="text/css" href="lib/ng-keypad.min.css">
+    <link rel="stylesheet" type="text/css" href="app.css">
+</head>
+<body ng-app='app'>
+    <div ng-controller='TestController as vm'>
+        <div class='col-md-6'>
+            <h1> Android Theme </h1>
+            <div class='container android'>
+                <input ng-model='vm.valor' disabled/>
+                <ng-keypad on-key-pressed='vm.onKeyPressed'>
+                    <ng-key ng-repeat='key in vm.keys' ng-key-data='key'>{{key}}</ng-key>
+                    <ng-key></ng-key>
+                    <ng-key ng-key-data='0'>0</ng-key>
+                    <ng-key ng-key-data='"<"'>del</ng-key>
+                </ng-keypad>
+            </div>
+        </div>
+        <div class='col-md-6'>
+            <h1> iOS Theme </h1>
+            <div class='container ios'>
+                <input ng-model='vm.valor' disabled/>
+                <ng-keypad on-key-pressed='vm.onKeyPressed'>
+                    <ng-key ng-repeat='key in vm.keys' ng-key-data='key'>{{key}}</ng-key>
+                    <ng-key class='empty'></ng-key>
+                    <ng-key ng-key-data='0'>0</ng-key>
+                    <ng-key class='empty' ng-key-data='"<"'>del</ng-key>
+                </ng-keypad>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="lib/angular.js"></script>
+    <script type="text/javascript" src="lib/ng-keypad.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
