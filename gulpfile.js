@@ -33,7 +33,6 @@ gulp.task('scripts',function(done){
         .pipe(plumber())
         .pipe(concat('ng-keypad.js'))
         .pipe(gulp.dest('./dist/'))
-        .pipe(gulp.dest('./demo/lib/'))
         .pipe(uglify())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./dist/'))
