@@ -10,7 +10,7 @@
         <div class='col-md-6'>
             <h1> Android Theme </h1>
             <div class='container android'>
-                <input ng-model='vm.valor' disabled/>
+                <input class="keypad-display" ng-model='vm.valor' disabled/>
                 <ng-keypad on-key-pressed='vm.onKeyPressed'>
                     <ng-key ng-repeat='key in vm.keys' ng-key-data='key'>{{key}}</ng-key>
                     <ng-key></ng-key>
@@ -22,7 +22,7 @@
         <div class='col-md-6'>
             <h1> iOS Theme </h1>
             <div class='container ios'>
-                <input ng-model='vm.valor' disabled/>
+                <input class="keypad-display" ng-model='vm.valor' disabled/>
                 <ng-keypad on-key-pressed='vm.onKeyPressed'>
                     <ng-key ng-repeat='key in vm.keys' ng-key-data='key'>{{key}}</ng-key>
                     <ng-key class='empty'></ng-key>
