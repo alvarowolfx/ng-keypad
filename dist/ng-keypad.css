@@ -16,6 +16,9 @@
     background: #cccccc; }
     .ios ng-key.empty a:hover:not(.ng-hide) {
       background: #f3f3f3; }
+.ios .keypad-display {
+  color: black;
+  border-bottom: 2px solid black; }
 
 @-webkit-keyframes pulse {
   0% {
@@ -60,6 +63,9 @@
   .android ng-key a:hover {
     opacity: 1;
     background: #b7e4ff; }
+.android .keypad-display {
+  color: #0091EA;
+  border-bottom: 2px solid #0091EA; }
 
 ng-keypad {
   margin: 0;
@@ -98,3 +104,15 @@ ng-keypad {
       ng-keypad ng-key a:hover {
         opacity: .8;
         background: #ccccff; }
+
+.keypad-display {
+  direction: rtl;
+  font-size: 2em;
+  padding: 0px -5% 10px 5%;
+  border: 0;
+  outline: 0;
+  text-align: right;
+  border-radius: 0;
+  width: 100%; }
+  .keypad-display:disabled {
+    background: transparent; }
