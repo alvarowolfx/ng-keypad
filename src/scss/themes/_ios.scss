@@ -3,7 +3,7 @@ $ios-default-key-color: white !default;
 $ios-default-empty-key-color: lighten(gray,30%) !default;
 $ios-default-border-color: lighten(gray,40%) !default;
 $ios-default-key-text-color: darken(gray,20%) !default;
-
+$ios-default-keypad-display-color: black !default;
 
 $key-padding-bottom: 15px;
 
@@ -32,5 +32,10 @@ $key-padding-bottom: 15px;
                 background: lighten($ios-default-key-text-color,65%);
             }
         }
+    }
+
+    .keypad-display {
+        color: $ios-default-keypad-display-color;
+        border-bottom: 2px solid $ios-default-keypad-display-color;
     }
 }

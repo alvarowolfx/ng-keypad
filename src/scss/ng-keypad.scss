@@ -3,10 +3,6 @@
 @import "./themes/ios.scss";
 @import "./themes/android.scss";
 
-.keypad-display {
-  direction: rtl;
-}
-
 ng-keypad {
     margin: 0;
     padding: 0;
@@ -46,3 +42,17 @@ ng-keypad {
     }
 }
 
+.keypad-display {
+    direction: rtl;
+    font-size: 2em;
+    padding: 0px -5% 10px 5%;
+    border: 0;
+    outline: 0;
+    text-align: right;
+    border-radius: 0;
+    width: 100%;
+
+    &:disabled {
+        background: rgba(0,0,0,0);
+    }
+}

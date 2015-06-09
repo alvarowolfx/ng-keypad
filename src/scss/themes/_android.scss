@@ -37,4 +37,9 @@ $android-default-key-color-light: lighten($android-default-key-color,40%);
             background: $android-default-key-color-light;
         }
     }
+
+    .keypad-display{
+        color: $android-default-key-color;
+        border-bottom: 2px solid $android-default-key-color;
+    }
 }
